@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="utility-nav d-none d-md-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+          </div>
+    
+          <div class="col-12 col-md-6 text-right">
+            <a href="#" style="text-decoration:auto;color:white;padding: 20px;">Delivery</a>
+            <a href="#" style="text-decoration:auto;color:white; padding: 20px;">Help</a>
+            <select name="" id="usd">
+                <option value="USD">USD</option>
+                <option value="Bangladesh">Bangladesh</option>
+            </select>
+            <select name="" id="usd">
+                <option value="Language">Language</option>
+                <option value="Bangla">Bangla</option>
+                <option value="English">English</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light main-menu" style="box-shadow:none">
+      <div class="container">
+    
+        <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
+                    <i class="bx bx-menu icon-single"></i>
+                </button>
+    
+        <a class="navbar-brand" href="#">
+          <h4 class="font-weight-bold">Ecommerce</h4>
+        </a>
+    
+        <ul class="navbar-nav ml-auto d-block d-md-none">
+          <li class="nav-item">
+            <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
+          </li>
+        </ul>
+    
+        <div class="collapse navbar-collapse">
+          <form class="form-inline my-2 my-lg-0 mx-auto" action="" style="display: flex;">
+            <input class="form-control" type="search" placeholder="Search for products..." aria-label="Search">
+            <input class="all" type="search" placeholder="All type" aria-label="Search" >
+            <button type="submit" style="    border: 1px solid; background-color: #4F46E5;"><i class="fa fa-search"></i></button>
+          </form>
+    
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="btn btn-link" href="#"><i class="bx bxs-cart icon-single"></i> <span class="badge badge-danger">3</span></a>
+            </li>
+            <li class="nav-item ml-md-3">
+                <i class="fa fa-shopping-cart " style="background-color: white;display: inline-block;  border-radius: 100%;padding: 10px;border: 1px solid darkgray;"></i>
+                <i class="fa fa-heart-o" style="background-color: white;display: inline-block;  border-radius: 100%;padding: 10px;border: 1px solid darkgray;"></i>
+                <i class="fa fa-user-circle-o" style="background-color: white;display: inline-block;  border-radius: 100%;padding: 10px;border: 1px solid darkgray;"></i>
+              <a class="" href="#"  style="text-decoration:auto;"><i class="bx bxs-user-circle mr-1"></i> Sing In / Join</a>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="" id="navbar">
+          <ul class="navbar-nav mx-auto">
+
+            <li class="nav-item ">
+                <a class="nav-link" href="#"><i class="fa fa-bars"></i></a>
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">All categories </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">House</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Office</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gym</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Furnitures</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="search-bar d-block d-md-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form class="form-inline mb-3 mx-auto">
+              <input class="form-control" type="all" placeholder="Search for products..." aria-label="Search">
+              <button class="btn btn-success" type="submit"><i class="bx bx-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+    <div class="">
+        <div class="container">
+            <div class="navbar navbar-expand-md navbar-light bg-light sub-menu" id="navbar">
+              <ul class="navbar-nav mx-auto">
+    
+                <li class="nav-item  ">
+                    <a class="nav-link active" href="#">1 The Object  </a>
+                  </li>
+                <li class="nav-item ">
+                  <a class="nav-link active" href="#">------- </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">2 Things</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">------</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">3 The booking</a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+   
+    <section class="h-100 h-custom" >
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="" style="border-radius: 15px;">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <p >Overview of your booking</p>
+                  </div>
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-8">
+                      <div class="p-5">
+                        <p>Product</p>
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-black mb-0">Camping chair</h6>
+                            <h6 class="text-muted">Matrix: 25 Mp <br> Brand: Name</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">€ 44.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-black mb-0">Folding chair</h6>
+                            <h6 class="text-muted">Size: Size <br> Brand: Name</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">€ 44.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img7.webp"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-black mb-0">Dining sets</h6>
+                            <h6 class="text-muted">Size: Size  <br> Brand: Name</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">€ 44.00</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="container" style="text-align: start; ">
+                            <div class="btn">
+                                <div class="success">
+                                  <a href="add.html"><button type="button" class="btn btn-secondary">Back</button></a>  
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 bg-grey">
+                      <div class="p-5">
+                       <p>Total number of Pieces:</p>
+                        <div class="d-flex justify-content-between mb-4">
+                          <p>Total price:</p>
+                         <p>$1403.97</p>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <p>Discount:</p>
+                           <p>- $60.00</p>
+                          </div>
+                          <div class="d-flex justify-content-between mb-4">
+                            <p>VAT:</p>
+                           <p>+ $14.00</p>
+                          </div>
+                       
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-5">
+                          <h5 class="text-uppercase">Total price</h5>
+                          <h5>$1357.97</h5>
+                        </div>
+      
+                        <button type="button" class="btn btn-dark btn-block btn-lg w-100" data-mdb-ripple-color="dark">Make Purchase</button>
+                        <div class="card mb-4 mb-lg-0">
+                            <div class="card-body">
+                              <p><strong>We accept</strong></p>
+                              <img class="me-2" width="45px"
+                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                                alt="Visa" />
+                              <img class="me-2" width="45px"
+                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                                alt="American Express" />
+                              <img class="me-2" width="45px"
+                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                                alt="Mastercard" />
+                              <img class="me-2" width="45px"
+                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.webp"
+                                />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+    
+
+<script>$(document).ready(function() {
+        $("#sidebarCollapse").on("click", function() {
+          $("#sidebar").addClass("active");
+        });
+      
+        $("#sidebarCollapseX").on("click", function() {
+          $("#sidebar").removeClass("active");
+        });
+      
+        $("#sidebarCollapse").on("click", function() {
+          if ($("#sidebar").hasClass("active")) {
+            $(".overlay").addClass("visible");
+            console.log("it's working!");
+          }
+        });
+      
+        $("#sidebarCollapseX").on("click", function() {
+          $(".overlay").removeClass("visible");
+        });
+      });</script>
+    
+      
+</body>
+
+</html>
